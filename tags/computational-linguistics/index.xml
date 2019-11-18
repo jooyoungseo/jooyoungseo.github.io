@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computational Linguistics | JooYoung Seo: a Learning Scientist for Inclusive Learning Ecologies</title>
+    <link>/tags/computational-linguistics/</link>
+      <atom:link href="/tags/computational-linguistics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Computational Linguistics</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© JooYoung Seo 2019</copyright><lastBuildDate>Sat, 19 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/JooYoungFacebookProfile.JPG</url>
+      <title>Computational Linguistics</title>
+      <link>/tags/computational-linguistics/</link>
+    </image>
+    
+    <item>
+      <title>Discovering Informal Learning Cultures of Blind Individuals Pursuing STEM Disciplines: A Quantitative Ethnography Using Listserv Archives</title>
+      <link>/publication/icqe_doctoral_consortium2019/</link>
+      <pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/icqe_doctoral_consortium2019/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quantitative Ethnography</title>
+      <link>/project/quantitative-ethnography/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/quantitative-ethnography/</guid>
+      <description>&lt;p&gt;This project is a methodological journey towards my dissertation that employs a novel mixed-methods called &amp;ldquo;Quantitative Ethnography&amp;rdquo; employing data science approach to a large corpus of texts in a rigorous, reliable, and reproducible fashion.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

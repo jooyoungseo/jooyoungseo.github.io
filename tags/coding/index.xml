@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>coding | JooYoung Seo: a Learning Scientist for Inclusive Learning Ecologies</title>
+    <link>/tags/coding/</link>
+      <atom:link href="/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <description>coding</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© JooYoung Seo 2019</copyright><lastBuildDate>Sat, 07 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/JooYoungFacebookProfile.JPG</url>
+      <title>coding</title>
+      <link>/tags/coding/</link>
+    </image>
+    
+    <item>
+      <title>Software Development</title>
+      <link>/project/software-development/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/project/software-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accessibility, Making and Tactile Robotics: Facilitating Collaborative Learning and Computational Thinking for Learners with Visual Impairments</title>
+      <link>/publication/icls2018/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/icls2018/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
