@@ -149,9 +149,9 @@ Figure 2: Population Growth: An Example Line Chart.
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;references&#34; class=&#34;section level1 unnumbered&#34;&gt;
-&lt;h1&gt;References&lt;/h1&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level1&#34;&gt;
+&lt;h1 class=&#34;unnumbered&#34;&gt;References&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references hanging-indent&#34;&gt;
 &lt;div id=&#34;ref-R-ggthemes&#34;&gt;
 &lt;p&gt;Arnold, J. B. (2019). &lt;em&gt;Ggthemes: Extra themes, scales and geoms for ’ggplot2’&lt;/em&gt;. Retrieved from &lt;a href=&#34;http://github.com/jrnold/ggthemes&#34;&gt;http://github.com/jrnold/ggthemes&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
