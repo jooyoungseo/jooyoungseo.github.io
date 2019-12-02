@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | JooYoung Seo: a Learning Scientist for Inclusive Learning Ecologies</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© JooYoung Seo 2019</copyright><lastBuildDate>Sat, 07 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/JooYoungFacebookProfile.JPG</url>
+      <title>Projects</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>Data Science</title>
+      <link>/project/data-science/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/project/data-science/</guid>
+      <description>&lt;p&gt;Using R and Python, data crawling, data munging, cleaning, exploratory/confirmatory data analysis, data visualization, and data modelling are conducted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software Development</title>
+      <link>/project/software-development/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/project/software-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Universal Design for Learning</title>
+      <link>/project/udl/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/project/udl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer-Supported Collaborative Learning</title>
+      <link>/project/cscl/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/project/cscl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inclusive Makerspaces</title>
+      <link>/project/inclusive-makerspaces/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/project/inclusive-makerspaces/</guid>
+      <description>&lt;p&gt;Inclusive makerspaces is the primary project that JooYoung is currently focusing on.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AROW</title>
+      <link>/project/arow/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/arow/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Please visit the &lt;a href=&#34;http://www.arowtool.com&#34;&gt;live demo site&lt;/a&gt; to experience the product.&lt;/p&gt;
+&lt;p&gt;This work has been presented in the 34th CSUN Assistive Technology Conference in Anaheim, CA, U.S (Wednesday, March 13, 2019 - 1:20 PM PST).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ezpickr</title>
+      <link>/project/ezpickr/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/ezpickr/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Please consult with &lt;a href=&#34;https://jooyoungseo.github.io/ezpickr/&#34;&gt;package site&lt;/a&gt; for more information.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>mboxr</title>
+      <link>/project/mboxr/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/mboxr/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Please consult with the &lt;a href=&#34;https://jooyoungseo.github.io/mboxr/&#34;&gt;package site&lt;/a&gt; for more information.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quantitative Ethnography</title>
+      <link>/project/quantitative-ethnography/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/quantitative-ethnography/</guid>
+      <description>&lt;p&gt;This project is a methodological journey towards my dissertation that employs a novel mixed-methods called &amp;ldquo;Quantitative Ethnography&amp;rdquo; employing data science approach to a large corpus of texts in a rigorous, reliable, and reproducible fashion.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tactile R</title>
+      <link>/project/tactiler/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/tactiler/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ClI555l4Z1M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>YouTubeCaption</title>
+      <link>/project/youtubecaption/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/youtubecaption/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Please consult with &lt;a href=&#34;https://jooyoungseo.github.io/youtubecaption/&#34;&gt;package site&lt;/a&gt; for more information.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

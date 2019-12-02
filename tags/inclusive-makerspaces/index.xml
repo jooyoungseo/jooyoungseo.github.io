@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inclusive Makerspaces | JooYoung Seo: a Learning Scientist for Inclusive Learning Ecologies</title>
+    <link>/tags/inclusive-makerspaces/</link>
+      <atom:link href="/tags/inclusive-makerspaces/index.xml" rel="self" type="application/rss+xml" />
+    <description>Inclusive Makerspaces</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© JooYoung Seo 2019</copyright><lastBuildDate>Sat, 26 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/JooYoungFacebookProfile.JPG</url>
+      <title>Inclusive Makerspaces</title>
+      <link>/tags/inclusive-makerspaces/</link>
+    </image>
+    
+    <item>
+      <title>Is the Maker Movement Inclusive of ANYONE?: Three Accessibility Considerations to Invite Blind Makers to the Making World</title>
+      <link>/publication/techtrends2019/</link>
+      <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/techtrends2019/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Accessibility, Making and Tactile Robotics: Facilitating Collaborative Learning and Computational Thinking for Learners with Visual Impairments</title>
+      <link>/publication/icls2018/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/icls2018/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

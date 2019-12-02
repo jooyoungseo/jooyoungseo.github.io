@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software-engineering | JooYoung Seo: a Learning Scientist for Inclusive Learning Ecologies</title>
+    <link>/tags/software-engineering/</link>
+      <atom:link href="/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <description>software-engineering</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© JooYoung Seo 2019</copyright><lastBuildDate>Sat, 07 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/JooYoungFacebookProfile.JPG</url>
+      <title>software-engineering</title>
+      <link>/tags/software-engineering/</link>
+    </image>
+    
+    <item>
+      <title>Software Development</title>
+      <link>/project/software-development/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/project/software-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ezpickr</title>
+      <link>/project/ezpickr/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/ezpickr/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Please consult with &lt;a href=&#34;https://jooyoungseo.github.io/ezpickr/&#34;&gt;package site&lt;/a&gt; for more information.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
