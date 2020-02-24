@@ -161,6 +161,81 @@ Figure 2: Population Growth: An Example Line Chart.
     </item>
     
     <item>
+      <title>Accessible Data Science for the Blind Using R</title>
+      <link>/post/initial-post/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/post/initial-post/</guid>
+      <description>&lt;h1 id=&#34;three-available-packages-specialized-for-visually-impaired-r-users&#34;&gt;Three Available Packages Specialized for Visually Impaired R Users&lt;/h1&gt;
+&lt;p&gt;There are three packages for the blind R users [@R-BrailleR; @R-tactileR; @R-sonify].&lt;/p&gt;
+&lt;h1 id=&#34;accessible-math-test&#34;&gt;Accessible Math Test&lt;/h1&gt;
+&lt;p&gt;The following shows an accessible Math created by R along with MathJax:&lt;/p&gt;
+&lt;p&gt;$$\frac
+{2}
+{3}
+$$&lt;/p&gt;
+&lt;p&gt;$3+2=5$&lt;/p&gt;
+&lt;p&gt;[ 3*2=6 ]&lt;/p&gt;
+&lt;p&gt;$$5^2=25$$&lt;/p&gt;
+&lt;h1 id=&#34;basic-histogram&#34;&gt;Basic Histogram&lt;/h1&gt;
+&lt;p&gt;See Figure @ref(fig:test) made by R base:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;VI&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;hist&lt;/span&gt;(airquality&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;Ozone))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## This is a histogram, with the title: Histogram of airquality$Ozone
+## &amp;quot;airquality$Ozone&amp;quot; is marked on the x-axis.
+## Tick marks for the x-axis are at: 0, 50, 100, and 150 
+## There are a total of 116 elements for this variable.
+## Tick marks for the y-axis are at: 0, 10, 20, and 30 
+## It has 9 bins with equal widths, starting at 0 and ending at 180 .
+## The mids and counts for the bins are:
+## mid = 10  count = 37 
+## mid = 30  count = 34 
+## mid = 50  count = 14 
+## mid = 70  count = 15 
+## mid = 90  count = 9 
+## mid = 110  count = 4 
+## mid = 130  count = 2 
+## mid = 150  count = 0 
+## mid = 170  count = 1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can sonify the scatterplot as follows:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;sonify&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;preserve14a74cb63d4bfda7&lt;/p&gt;
+&lt;h1 id=&#34;ggplot&#34;&gt;Ggplot&lt;/h1&gt;
+&lt;h2 id=&#34;data-visualization&#34;&gt;Data Visualization&lt;/h2&gt;
+&lt;p&gt;See Figure @ref(fig:ggplot) created by ggplot2 [@R-ggplot2], ggthemes [@R-ggthemes], and plotly [@R-plotly] packages.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;data-textualization&#34;&gt;Data Textualization&lt;/h2&gt;
+&lt;p&gt;The following is the textualized version of the graph above using VI() function of BrailleR package [@R-BrailleR]:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;VI&lt;/span&gt;(g)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;## This chart has title &#39;Population Growth&#39;.
+## It has x-axis &#39;Month&#39; with labels Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov and Dec.
+## It has y-axis &#39;Population&#39; with labels 280,000, 290,000, 300,000, 310,000 and 320,000.
+## There is a legend indicating that colour is used to represent factor(year), with 16 levels:
+## 2000 represented by colour light greenish blue, 
+## 2001 represented by colour dark greenish blue, 
+## 2002 represented by colour brilliant blue, 
+## 2003 represented by colour very light blue, 
+## 2004 represented by colour vivid bluish green, 
+## 2005 represented by colour light bluish green, 
+## 2006 represented by colour strong reddish brown, 
+## 2007 represented by colour strong yellowish pink, 
+## 2008 represented by colour light gray, 
+## 2009 represented by colour white, 
+## 2010 represented by colour white, 
+## 2011 represented by colour white, 
+## 2012 represented by colour white, 
+## 2013 represented by colour white, 
+## 2014 represented by colour white and 
+## 2015 represented by colour white.
+## The chart is a set of 16 lines.
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;data-tactualization&#34;&gt;Data Tactualization&lt;/h2&gt;
+&lt;p&gt;Please refer to the following video that explains tactileR package [@R-tactileR].&lt;/p&gt;
+&lt;p&gt;preservec30c674322a1f420&lt;/p&gt;
+&lt;h1 id=&#34;references--&#34;&gt;References {-}&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
       <title>ezpickr</title>
       <link>/project/ezpickr/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
