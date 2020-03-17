@@ -1,0 +1,43 @@
+---
+title: "Appendix for Dissertation Study"
+author: "JooYoung Seo (jooyoung@psu.edu)"
+date: "`r Sys.Date()`"
+#output:
+#  bookdown::markdown_document2:
+#    base_format: 'function(...) prettydoc::html_pretty(theme = "architect", highlight = "github", ...)'
+#    toc: true
+#    toc_depth: 4
+knit: "bookdown::render_book"
+---
+
+# Ethical Reviews and Approvals
+
+Table\ \@ref(tab:ethical-approval) illustrates ethical review processes that this proposal has gone through.
+
+```{r ethical-approval, echo = FALSE}
+data <- ezpickr::pick("C:/Users/JooYoung/Box/JY/Research/dissertation/appendix/approval-for-ethical-procedures.xlsx")
+caption <- "Ethical reviews and approvals for conducting this study."
+knitr::kable(data, caption = caption)
+```
+
+# Institutional Review Board (IRB) Materials
+
+The following includes two official Letters from Office for Research Protections at the Pennsylvania State University:
+
+1. [Approval for data-science research on the NFB mailing list archives in the public domain: Study \#00012478.](https://jooyoungseo.com/appendix/2019-05-21-not-human-research.pdf){target="_blank"}
+2. [Approval for follow-up interview with the NFB members: Study \#00014119.](https://jooyoungseo.com/appendix/2019-12-19-exempt-research.pdf){target="_blank"}
+
+# National Federation of the Blind (NFB) Materials
+
+The following includes official form submissions to the NFB Research Advisory Council, and the information stating that the proposed study has been approved by their committees:
+
+1. [Confirmation of the Form submitted to the NFB Research Advisory Council.](https://jooyoungseo.com/appendix/Gmail - Form submission from_ Research Participant Solicitation Request Form.pdf){target="_blank"}
+2. [Official approvals from the NFB committees for conducting this data-science research coupled with follow-up human-subject interviews.](https://jooyoungseo.com/appendix/Gmail - Follow-up for the permission request for using the NFB public email archives.pdf){target="_blank"}
+
+# Interview Materials
+
+The following includes some materials related to conducting follow-up interview with the NFB members:
+
+1. [Study invitation/recruitment materials.](https://jooyoungseo.com/appendix/invitation_material.pdf){target="_blank"}
+2. [Interview consent form.](https://jooyoungseo.com/appendix/Interview_Consent_Form.pdf){target="_blank"}
+3. [Semi-structured interview protocol.](https://jooyoungseo.com/appendix/Semi-Structured_Interview_Protocol.pdf){target="_blank"}

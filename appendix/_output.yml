@@ -1,0 +1,4 @@
+bookdown::markdown_document2:
+  base_format: 'function(...) prettydoc::html_pretty(theme = "architect", highlight = "github", ...)'
+#  toc: true
+#  toc_depth: 4
