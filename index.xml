@@ -59,72 +59,87 @@
       <link>/post/gsuites-accessibility/</link>
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/gsuites-accessibility/</guid>
-      <description>&lt;h1 id=&#34;concise-background&#34;&gt;Concise Background&lt;/h1&gt;
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;concise-background&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Concise Background&lt;/h1&gt;
 &lt;p&gt;Due to the COVID-19 situation, GSuites are becoming used remotely at many institutes.&lt;/p&gt;
 &lt;p&gt;Despite its built-in accessibility, many people still have difficulties in configuring the related options.&lt;/p&gt;
 &lt;p&gt;This article will quickly walk you through the nitty-gritty points of the GSuites accessibility settings.&lt;/p&gt;
-&lt;h1 id=&#34;objectives&#34;&gt;Objectives&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;objectives&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Objectives&lt;/h1&gt;
 &lt;p&gt;In this article, the following will be described:&lt;/p&gt;
-&lt;ol&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Toggling accessibility global options for GSuites.&lt;/li&gt;
 &lt;li&gt;Toggling accessibility local options within each Google product.&lt;/li&gt;
 &lt;li&gt;Setting screen-reader-friendly layout in Google Drive.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&#34;aaccessibility-global-options-for-gsuites&#34;&gt;Aaccessibility Global Options for GSuites&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Go to 
-&lt;a href=&#34;https://myaccount.google.com/u/1/accessibility&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GSuites Accessibility settings&lt;/a&gt;{target=&amp;rdquo;_blank&amp;rdquo;}.&lt;/li&gt;
+&lt;/div&gt;
+&lt;div id=&#34;aaccessibility-global-options-for-gsuites&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Aaccessibility Global Options for GSuites&lt;/h1&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Go to &lt;a href=&#34;https://myaccount.google.com/u/1/accessibility&#34; target=&#34;_blank&#34;&gt;GSuites Accessibility settings&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Toggle on and/or off the following two options selectively:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;&lt;strong&gt;Screen reader&lt;/strong&gt;: turn this on if using screen readers in GSuites.&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;&lt;strong&gt;High-contrast colors&lt;/strong&gt;: toggle this on if a more color-contrast is needed in GSuites.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;input type=&#34;checkbox&#34; disabled=&#34;&#34; checked=&#34;&#34; /&gt;
+&lt;strong&gt;Screen reader&lt;/strong&gt;: turn this on if using screen readers in GSuites.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;input type=&#34;checkbox&#34; disabled=&#34;&#34; checked=&#34;&#34; /&gt;
+&lt;strong&gt;High-contrast colors&lt;/strong&gt;: toggle this on if a more color-contrast is needed in GSuites.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;: If you have more than one Google account, the configuration described above must be applied to each account separately. Click an expandable icon saying “Google Account: ([&lt;a href=&#34;mailto:your@email.here&#34; class=&#34;email&#34;&gt;your@email.here&lt;/a&gt;])” to switch between accounts for which you would like to apply the accessibility options.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Notes&lt;/strong&gt;: If you have more than one Google account, the configuration described above must be applied to each account separately. Click an expandable icon saying &amp;ldquo;Google Account: ([your@email.here])&amp;rdquo; to switch between accounts for which you would like to apply the accessibility options.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;aaccessibility-local-options-within-each-google-product&#34;&gt;Aaccessibility Local Options within Each Google Product&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;aaccessibility-local-options-within-each-google-product&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Aaccessibility Local Options within Each Google Product&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Notes&lt;/strong&gt;: Regardless of the global options explained above, the following local options are strongly recommended for screen reader users to toggle on in case those are disabled. As each product remembers their own settings, you only need to go through the settings below just one time.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ol&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Open a specific Google product (e.g., Google Docs; Sheets; Slides).&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Notes&lt;/strong&gt;: You can open any Google documents that you either have been invited from others or have created by yourself.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ol start=&#34;2&#34;&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Press Alt+/ (forward slash) to bring up a search menu.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Notes&lt;/strong&gt;: For screen reader users, turn off virtual cursor (AKA browse mode) before excuting the search menu above. Press JAWS+Z for JAWS, NVDA+Spacebar for NVDA to achieve this goal.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;In the search menu edit box, type in &amp;ldquo;accessibility&amp;rdquo; without quotes to select &amp;ldquo;Accessibility settings&amp;rdquo; and enter on that focused item.&lt;/li&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;In the search menu edit box, type in “accessibility” without quotes to select “Accessibility settings” and enter on that focused item.&lt;/li&gt;
 &lt;li&gt;Must check the following two options if using screen readers:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;Turn on screen reader support.&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;Turn on braille support.&lt;/li&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled=&#34;&#34; checked=&#34;&#34; /&gt;
+Turn on screen reader support.&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled=&#34;&#34; checked=&#34;&#34; /&gt;
+Turn on braille support.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ol start=&#34;5&#34;&gt;
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Do the steps 1 through 4 inside each of the Google products (e.g., google Docs; Sheets; Slides) to fully benefit from GSuites accessibility for screen readers.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&#34;setting-screen-reader-friendly-layout-in-google-drive&#34;&gt;Setting Screen-Reader-Friendly Layout in Google Drive&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;setting-screen-reader-friendly-layout-in-google-drive&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Setting Screen-Reader-Friendly Layout in Google Drive&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Notes&lt;/strong&gt;: The following is optional; however, it may contribute to screen-reader-navigation.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;Open 
-&lt;a href=&#34;https://drive.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Drive&lt;/a&gt;{target=&amp;rdquo;_blank&amp;rdquo;}.&lt;/li&gt;
-&lt;li&gt;Press &amp;ldquo;v&amp;rdquo; without quotes to toggle between list view and grid view. The list view is recommended for screen reader users as it only has one direction (up-and-down navigation) mode which is much simpler to grasp.&lt;/li&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://drive.google.com&#34; target=&#34;_blank&#34;&gt;Google Drive&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Press “v” without quotes to toggle between list view and grid view. The list view is recommended for screen reader users as it only has one direction (up-and-down navigation) mode which is much simpler to grasp.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Notes&lt;/strong&gt;: For screen reader users, turn off virtual cursor (AKA browse mode) before &amp;ldquo;v&amp;rdquo; key. Press JAWS+Z for JAWS, NVDA+Spacebar for NVDA to achieve this goal.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Notes&lt;/strong&gt;: For screen reader users, turn off virtual cursor (AKA browse mode) before “v” key. Press JAWS+Z for JAWS, NVDA+Spacebar for NVDA to achieve this goal.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;more-resources&#34;&gt;More Resources&lt;/h1&gt;
-&lt;p&gt;For more information, please consult with 
-&lt;a href=&#34;https://www.perkinselearning.org/technology/posts/google-docs-and-sheets-screen-reader-resources&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Docs and Sheets with a Screen Reader&lt;/a&gt;{target=&amp;rdquo;_blank&amp;rdquo;} archived by Perkins eLearning.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;more-resources&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;More Resources&lt;/h1&gt;
+&lt;p&gt;For more information, please consult with &lt;a href=&#34;https://www.perkinselearning.org/technology/posts/google-docs-and-sheets-screen-reader-resources&#34; target=&#34;_blank&#34;&gt;Google Docs and Sheets with a Screen Reader&lt;/a&gt; archived by Perkins eLearning.&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
