@@ -7,7 +7,7 @@ date: "`r Sys.Date()`"
 #    base_format: 'function(...) prettydoc::html_pretty(theme = "architect", highlight = "github", ...)'
 #    toc: true
 #    toc_depth: 4
-knit: "bookdown::render_book"
+knit: bookdown::render_book
 ---
 
 # Ethical Reviews and Approvals
