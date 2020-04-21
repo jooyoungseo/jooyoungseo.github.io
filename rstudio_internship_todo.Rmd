@@ -1,0 +1,58 @@
+---
+title: "Tentative Internship Planning"
+author: "JooYoung Seo (jooyoung@psu.edu)"
+date: "`r Sys.Date()`"
+output:
+  bookdown::markdown_document2:
+    base_format: 'function(...) prettydoc::html_pretty(theme = "architect", highlight = "github", ...)'
+    toc: true
+    toc_depth: 4
+#knit: "bookdown::render_book"
+---
+
+# To Do
+
+## VPAT
+
+* Document [Voluntary Product Accessibility Template](https://en.wikipedia.org/wiki/Voluntary_Product_Accessibility_Template){target="_blank"} for all the possible RStudio products.
+* Exemplary case: [Zoom VPAT on their accessibility page](https://zoom.us/accessibility){target="_blank"}.
+
+## Website
+
+* Address RStudio web pages against WCAG 2.1 AA.
+* Address some hugo-based accessibility issues.
+
+## Cheatsheet
+
+* Fix [rstudio/cheatsheets source templates](https://github.com/rstudio/cheatsheets){target="_blank"} against [keynote/powerpoint accessibility](https://webaim.org/techniques/powerpoint/){target="_blank"}.
+* Address RStudio cheatsheets pdf output files against [Adobe pdf accessibility checker](https://www.adobe.com/accessibility/products/acrobat/using-acrobat-pro-accessibility-checker.html){target="_blank"}.
+
+## Certifications
+
+* Identify and address the accessibility issues of [RStudio certifications](https://education.rstudio.com/trainers/){target="_blank"} including its content and processes against some accessibility and universal design principles.
+
+## rmarkdown
+
+* Keyboard navigation enhancement for web-based-slide output formats (e.g., rmarkdown::ioslides_presentation, bookdown::ioslides_presentation2, xaringan::moon_reader).
+* Console-interactive function development in `rmarkdown` package for both non-RStudio users and screen reader users to easily draft their Rmd documents based on system-installed packages having Rmd templates.
+* Develop a function addressing [rstudio/rmarkdown#1711](https://github.com/rstudio/rmarkdown/issues/1711){target="_blank"}: this will increase accessibility of Rmd by allowing console users to knit their Rmd files without having to go through RStudio IDE.
+
+## shiny
+
+* Fix each component against WCAG 2.1 AA.
+
+## learnr
+
+* Fix inaccessible components against WCAG 2.1 AA (the issues mostly have to do with shiny).
+
+## RStudio IDE
+
+* Conduct an extensive accessibility test of both desktop and server against WCAG 2.1 AA in conjunction with a range of assistive technology and browser combinations on each different platforms.
+* Write some screen-reader-scripts tailored for NVDA and JAWS to better support RStudio IDE.
+
+## Sharing Tips
+
+* Document some accessibility tips for using R and RStudio from a blind data scientist's perspective.
+* Host a virtual meeting or tutorial tailored for blind R users to introduce the accessibility features and enhancements at the end of this internship.
+* Take a video of myself using RStudio products with a screen reader to advertise around "Accessible Data Science with RStudio" at the end of this internship.
+* If an opportunity is given, introduce and demonstrate accessibility features of RStudio with Gary at the next `rstudio::conf`.
