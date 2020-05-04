@@ -16,7 +16,7 @@ output:
 
 * Document [Voluntary Product Accessibility Template](https://en.wikipedia.org/wiki/Voluntary_Product_Accessibility_Template){target="_blank"} for all the possible RStudio products.
 * Exemplary case: [Zoom VPAT on their accessibility page](https://zoom.us/accessibility){target="_blank"}.
-* [Official VPAT templates](https://www.itic.org/policy/accessibility/vpat).
+* [Official VPAT templates](https://www.itic.org/policy/accessibility/vpat){target="_blank"}.
 
 
 ## Website
@@ -26,8 +26,8 @@ output:
 
 ### Auto Testing
 
-* [pa11y: automated accessibility testing pal](https://github.com/pa11y/pa11y)
-* [AATT: Automated Accessibility Testing Tool](https://github.com/paypal/AATT)
+* [pa11y: automated accessibility testing pal](https://github.com/pa11y/pa11y){target="_blank"}
+* [AATT: Automated Accessibility Testing Tool](https://github.com/paypal/AATT){target="_blank"}
 
 ### Manual Testing
 
