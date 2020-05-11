@@ -129,9 +129,9 @@ VI(hist(airquality$Ozone))&lt;/code&gt;&lt;/pre&gt;
 &lt;div id=&#34;boxplot&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;Boxplot&lt;/h4&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:boxplot&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2020-05-11-ds4blind_files/figure-html/boxplot-1.png&#34; alt=&#34;Histogram of Ozone.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;/post/2020-05-11-ds4blind_files/figure-html/boxplot-1.png&#34; alt=&#34;Boxplot of dist.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
-Figure 3: Histogram of Ozone.
+Figure 3: Boxplot of dist.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Figure &lt;a href=&#34;#fig:boxplot&#34;&gt;3&lt;/a&gt; can be textualized like below:&lt;/p&gt;
