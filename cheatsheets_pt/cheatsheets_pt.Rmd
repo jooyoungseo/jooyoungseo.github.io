@@ -1,0 +1,139 @@
+---
+title: "Improving Cheatsheets Accessibility"
+author: "JooYoung Seo"
+institute: "RStudio, PBC"
+date: "2020/05/22 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+xaringanExtra::use_slide_tone()
+```
+
+class: center, middle, inverse
+
+# rstudio/cheatsheets
+
+## Overview of Workflow
+
+---
+
+# Two Authoring Sources
+
+* pptx for Windows
+* keynotes for Mac
+
+---
+
+## One Exported Output
+
+* pdf
+
+---
+
+class: center, middle, inverse
+
+# Current Issue
+
+---
+
+# Accessibility Issues
+
+* pdf cheatsheets missing important semantic tags (alt text, headings, etc.)
+
+--
+
+  1. Layer1: on authoring source end
+
+--
+
+  2. Layer2: on output product end
+
+---
+
+# Why Does It Matter?
+
+* Official;
+* Also included in RStudio IDE (Help menu);
+* Widespread.
+
+---
+
+class: center, middle, inverse
+
+# Solutions
+
+---
+
+# How to Fix?
+
+## Flip Around the Workflow
+
+--
+
+* Ultimate fix: on output (pdf) end;
+
+--
+
+* Fundamental fix: on source (pptx/keys) end.
+
+.footnote[
+[1] For pdf, use [Adobe Pdf Accessibility Checker](https://www.adobe.com/accessibility/products/acrobat/using-acrobat-pro-accessibility-checker.html) to check and fix accessibility issues.
+
+[2] For pptx, use [MS Accessibility Checker](https://webaim.org/techniques/powerpoint#check).
+
+[3] For keynotes, please consult with [Apple Document](https://support.apple.com/en-us/HT210563).
+]
+
+---
+
+class: center, middle, inverse
+
+# Priorities
+
+---
+
+# RStudio Owned Products
+
+* *RStudio IDE Cheat Sheet*
+* Data Transformation with dplyr     
+* Data Visualization with ggplot2     
+* List manipulation with purrr     
+* Package Development with devtools     
+* Web Applications with shiny     
+* Build web applications with Shiny
+* Interfacing Spark with sparklyr     
+* Interfacing Apache Spark with sparklyr
+* *R Markdown Cheat Sheet*
+* *R Markdown Reference Guide*
+
+---
+
+# Making Code of Conduct
+
+* Fix templates for accessibility.
+
+  - "0-template.pptx"
+
+  - "0-template.key"
+
+* Ask authors of each cheatsheet, including translators, to fix their own if possible.
+
+---
+
+class: center, middle, inverse
+
+# Demonstration of Accessibility Fix
+
+---
+
+class: center, middle, inverse
+
+# Discussion
