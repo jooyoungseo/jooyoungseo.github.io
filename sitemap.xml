@@ -18,6 +18,101 @@
   </url>
   
   <url>
+    <loc>/authors/admin/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/1/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/accessibility/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/blind/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/coding/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/icls2020/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/computational-thinking/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/gabriela-t.-richard/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/inclusive-makerspaces/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/making/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/robotics/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/universal-design/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/visual-impairments/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/ds4blind/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
   </url>
@@ -33,11 +128,6 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
   </url>
@@ -48,42 +138,12 @@
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/gsuites-accessibility/</loc>
     <lastmod>2020-03-19T21:22:55-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/admin/</loc>
-    <lastmod>2019-10-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/1/</loc>
-    <lastmod>2019-10-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/arts/</loc>
-    <lastmod>2019-10-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
-    <lastmod>2019-10-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/blind/</loc>
     <lastmod>2019-10-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -104,16 +164,6 @@
   
   <url>
     <loc>/tags/mathematics/</loc>
-    <lastmod>2019-10-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2019-10-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
     <lastmod>2019-10-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -153,11 +203,6 @@
   </url>
   
   <url>
-    <loc>/tags/visual-impairments/</loc>
-    <lastmod>2019-10-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/courses/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
@@ -168,32 +213,12 @@
   </url>
   
   <url>
-    <loc>/tags/accessibility/</loc>
-    <lastmod>2019-01-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/hci/</loc>
     <lastmod>2019-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/inclusive-makerspaces/</loc>
-    <lastmod>2019-01-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/techtrends2019/</loc>
-    <lastmod>2019-01-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/making/</loc>
-    <lastmod>2019-01-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/universal-design/</loc>
     <lastmod>2019-01-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -243,11 +268,6 @@
   </url>
   
   <url>
-    <loc>/tags/coding/</loc>
-    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/project/data-science/</loc>
     <lastmod>2018-04-07T00:00:00+00:00</lastmod>
   </url>
@@ -289,11 +309,6 @@
   
   <url>
     <loc>/publication/aera2018/</loc>
-    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/gabriela-t.-richard/</loc>
     <lastmod>2018-04-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -348,11 +363,6 @@
   </url>
   
   <url>
-    <loc>/tags/computational-thinking/</loc>
-    <lastmod>2018-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/project/cscl/</loc>
     <lastmod>2018-04-02T00:00:00+00:00</lastmod>
   </url>
@@ -379,11 +389,6 @@
   
   <url>
     <loc>/tags/makerspaces/</loc>
-    <lastmod>2018-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/robotics/</loc>
     <lastmod>2018-04-02T00:00:00+00:00</lastmod>
   </url>
   

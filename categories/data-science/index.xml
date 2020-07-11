@@ -159,7 +159,7 @@ Figure 4: Population Growth: An Example Line Chart.
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;div id=&#34;refs&#34; class=&#34;references hanging-indent&#34;&gt;
 &lt;div id=&#34;ref-R-BrailleR&#34;&gt;
-&lt;p&gt;Godfrey, A. J. R., Warren, D., Murrell, P., Bilton, T., &amp;amp; Sorge, V. (2020). &lt;em&gt;BrailleR: Improved access for blind users&lt;/em&gt;. Retrieved from &lt;a href=&#34;https://CRAN.R-project.org/package=BrailleR&#34;&gt;https://CRAN.R-project.org/package=BrailleR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Godfrey, A. J. R., Warren, D., Murrell, P., Bilton, T., &amp;amp; Sorge, V. (2020). &lt;em&gt;BrailleR: Improved access for blind users&lt;/em&gt;. Retrieved from &lt;a href=&#34;https://github.com/ajrgodfrey/BrailleR&#34;&gt;https://github.com/ajrgodfrey/BrailleR&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;ref-R-tactileR&#34;&gt;
 &lt;p&gt;Seo, J. (2020). &lt;em&gt;TactileR: Converting r graphics into a braille ready-to-print pdf&lt;/em&gt;. Retrieved from &lt;a href=&#34;https://github.com/jooyoungseo/tactileR&#34;&gt;https://github.com/jooyoungseo/tactileR&lt;/a&gt;&lt;/p&gt;
