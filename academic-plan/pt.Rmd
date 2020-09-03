@@ -1,0 +1,72 @@
+---
+title: "JooYoung's Academic Plans"
+#subtitle: "⚔<br/>with xaringan"
+author: "JooYoung Seo"
+#institute: "RStudio, PBC"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    includes:
+      in_header: "meta.html"
+---
+
+```{r xaringan-slide-tone, echo=FALSE}
+xaringanExtra::use_slide_tone()
+```
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+class: center, middle, inverse
+
+# JooYoung's Profile
+
+* JY's latest CV: https://jooyoungseo.github.io/jy_CV/JooYoung_Seo_CV.pdf
+
+* Personal homepage: http://jooyoungseo.com/
+
+* Google Scholar: https://scholar.google.com/citations?user=c0x8E5YAAAAJ&hl=en
+
+* GitHub: https://github.com/jooyoungseo
+
+* LinkedIn: https://www.linkedin.com/in/jooyoungseo/
+
+---
+
+class: center, middle, inverse
+
+# Final Defense Plan (Spring 2021)
+
+* **May 8: commencement.**
+
+* March 29: revised dissertation upload to the eTD website.
+
+* **March 5: final defense.**
+
+* Feb 15: dissertation draft for the eTD format review.
+
+* Jan 2, 2021: Intent to Graduate Activation.
+
+.footnote[
+[1] [Spring 2021 academic calendar](https://www.registrar.psu.edu/academic-calendars/2020-21.cfm).
+
+[2] [Important Deadlines](https://gradschool.psu.edu/completing-your-degree/important-deadlines/).
+]
+
+---
+
+class: center, middle, inverse
+
+# Conference Plans
+
+* Sep 16-18: DC at the ACM Richard Tapia Celebration of Diversity in Computing Conference.
+
+* Nov 1: full paper to the [International Conference on Learning Analytics & Knowledge](https://www.solaresearch.org/events/lak/lak21/general-call/?fbclid=IwAR2cQtjCoyV_uB05K2QTczE1G468UoFi-ieIpXyjTgto4aX0Pdqz6Y96DDU).
+
+* ICLS/CSCL (optional)
