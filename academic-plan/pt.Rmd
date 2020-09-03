@@ -45,18 +45,20 @@ class: center, middle, inverse
 
 * **May 8: commencement.**
 
+* Apr 26: committee members' approvals of final draft in eTD.
+
 * March 29: revised dissertation upload to the eTD website.
 
-* **March 5: final defense.**
+* **Feb 26: final defense.**
 
-* Feb 15: dissertation draft for the eTD format review.
+* Feb 8: dissertation draft for the eTD format review.
 
 * Jan 2, 2021: Intent to Graduate Activation.
 
 .footnote[
 [1] [Spring 2021 academic calendar](https://www.registrar.psu.edu/academic-calendars/2020-21.cfm).
 
-[2] [Important Deadlines](https://gradschool.psu.edu/completing-your-degree/important-deadlines/).
+[2] [Important Deadlines](https://gradschool.psu.edu/completing-your-degree/thesis-and-dissertation-information/thesis-dissertation-performance-and-oral-presentation-deadlines-calendar/).
 ]
 
 ---
