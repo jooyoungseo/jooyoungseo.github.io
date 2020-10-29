@@ -1,0 +1,43 @@
+---
+title: "Meeting Talking Points"
+#subtitle: "⚔<br/>with xaringan"
+author: "JooYoung Seo"
+#institute: "RStudio, PBC"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    includes:
+      in_header: "meta.html"
+---
+
+```{r xaringan-slide-tone, echo=FALSE}
+xaringanExtra::use_slide_tone()
+```
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+class: center, middle, inverse
+
+# Reminder
+
+* Nov 2: University of Missouri.
+* Nov 2: Alumni Association Dissertation Award.
+* December 1: University of Michigan PPFP.
+
+---
+
+class: center, middle, inverse
+
+# Update
+
+* [LAK21 full paper](https://www.solaresearch.org/events/lak/lak21/general-call/?fbclid=IwAR2cQtjCoyV_uB05K2QTczE1G468UoFi-ieIpXyjTgto4aX0Pdqz6Y96DDU).
+* University of Florida.
+* DSQ.
+* ICLS.
