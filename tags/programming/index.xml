@@ -188,7 +188,11 @@ Figure 4: Population Growth: An Example Line Chart.
       <link>/project/ezpickr/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/project/ezpickr/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to import publication metadata into your reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;p&gt;Please consult with 
 &lt;a href=&#34;https://jooyoungseo.github.io/ezpickr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;package site&lt;/a&gt; for more information.&lt;/p&gt;
 </description>
