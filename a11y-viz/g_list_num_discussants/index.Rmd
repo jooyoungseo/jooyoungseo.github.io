@@ -1,0 +1,9 @@
+---
+title: "Accessible Histogram"
+output:
+  bookdown::html_document2: default
+---
+
+# Accessible Histogram
+
+This content will be published after paper acceptance.
