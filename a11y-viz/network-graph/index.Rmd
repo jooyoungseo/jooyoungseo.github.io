@@ -1,0 +1,9 @@
+---
+title: "Accessible Network Graphs"
+output:
+  bookdown::html_document2: default
+---
+
+# Accessible Network Graphs
+
+This content will be published after paper acceptance.
