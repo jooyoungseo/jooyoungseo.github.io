@@ -2,3 +2,4 @@ user-agent: *
 disallow: /R/
 disallow: /proposal/
 disallow: /appendix/
+disallow: /researchtalk/
