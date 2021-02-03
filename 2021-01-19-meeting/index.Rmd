@@ -1,0 +1,60 @@
+---
+title: "Meeting Talking Points"
+#subtitle: "⚔<br/>with xaringan"
+author: "JooYoung Seo"
+#institute: "RStudio, PBC"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    includes:
+      in_header: "meta.html"
+---
+
+```{r xaringan-slide-tone, echo=FALSE}
+xaringanExtra::use_slide_tone()
+```
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+class: center, middle, inverse
+
+# Meeting Points
+
+
+## Summer Defense/Graduation
+## Job Searching Update
+## SCAFFOLD Revision
+
+---
+class: center, middle, inverse
+
+# Summer Defense/Graduation
+
+## 6/14 (Mon) - 6/17 (Thu): Defense.
+
+## 5/17 (Mon): Dissertation Dissemination to Committee.
+
+---
+class: center, middle, inverse
+
+# Job Searching Update
+
+## [Postdoc]: University of Carleton.
+
+## UIUC iSchool (02/22 - 02/23).
+
+---
+class: center, middle, inverse
+
+# SCAFFOLD Revision
+
+## Hire editor.
+
+## Turn in late February.
