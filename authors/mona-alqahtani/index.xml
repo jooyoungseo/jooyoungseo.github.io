@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mona AlQahtani | JooYoung Seo: Learning Scientist; Data Scientist; Accessibility Engineer</title>
+    <link>/authors/mona-alqahtani/</link>
+      <atom:link href="/authors/mona-alqahtani/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mona AlQahtani</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© JooYoung Seo 2021</copyright><lastBuildDate>Wed, 21 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/JooYoungFacebookProfile.JPG</url>
+      <title>Mona AlQahtani</title>
+      <link>/authors/mona-alqahtani/</link>
+    </image>
+    
+    <item>
+      <title>Embracing Learners with Visual Impairments in CSCL</title>
+      <link>/publication/cscl2017/</link>
+      <pubDate>Wed, 21 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/cscl2017/</guid>
+      <description>&lt;p&gt;This work has been presented in the 2017 International Conference on Computer-Supported Collaborative Learning in Philadelphia, US.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
