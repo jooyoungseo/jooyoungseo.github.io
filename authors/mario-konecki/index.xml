@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mario Konecki | JooYoung Seo: Learning Scientist; Data Scientist; Accessibility Engineer</title>
+    <link>/authors/mario-konecki/</link>
+      <atom:link href="/authors/mario-konecki/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mario Konecki</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© JooYoung Seo 2021</copyright><lastBuildDate>Thu, 12 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/JooYoungFacebookProfile.JPG</url>
+      <title>Mario Konecki</title>
+      <link>/authors/mario-konecki/</link>
+    </image>
+    
+    <item>
+      <title>The Role of ICT in Aiding Visually Impaired Students and Professionals</title>
+      <link>/publication/mac2017/</link>
+      <pubDate>Thu, 12 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/mac2017/</guid>
+      <description>&lt;p&gt;This work has been presented in Proceedings of the 11th Multidisciplinary Academic Conference in Prague 2017, Czech Republic.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
