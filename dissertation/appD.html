@@ -4,36 +4,36 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Appendix F: R Script Used for Data Cleaning and Transformation | Discovering Informal Learning Cultures of Blind Individuals Pursuing STEM Disciplines</title>
-  <meta name="description" content="JooYoung Seo’s dissertation submitted to the Pennsylvania State University" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <title>Appendix D: R Script Used for Data Cleaning and Transformation | Discovering Informal Learning Cultures of Blind Individuals Pursuing STEM Disciplines</title>
+  <meta name="description" content="Appendix D: R Script Used for Data Cleaning and Transformation | Discovering Informal Learning Cultures of Blind Individuals Pursuing STEM Disciplines" />
+  <meta name="generator" content="bookdown 0.18.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Appendix F: R Script Used for Data Cleaning and Transformation | Discovering Informal Learning Cultures of Blind Individuals Pursuing STEM Disciplines" />
+  <meta property="og:title" content="Appendix D: R Script Used for Data Cleaning and Transformation | Discovering Informal Learning Cultures of Blind Individuals Pursuing STEM Disciplines" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://www.jooyoungseo.com/dissertation" />
   
-  <meta property="og:description" content="JooYoung Seo’s dissertation submitted to the Pennsylvania State University" />
-  <meta name="github-repo" content="jooyoungseo/dissertation" />
+  
+  
+  
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Appendix F: R Script Used for Data Cleaning and Transformation | Discovering Informal Learning Cultures of Blind Individuals Pursuing STEM Disciplines" />
+  <meta name="twitter:title" content="Appendix D: R Script Used for Data Cleaning and Transformation | Discovering Informal Learning Cultures of Blind Individuals Pursuing STEM Disciplines" />
   
-  <meta name="twitter:description" content="JooYoung Seo’s dissertation submitted to the Pennsylvania State University" />
+  
   
 
 <meta name="author" content="JooYoung Seo" />
 
 
-<meta name="date" content="2021-04-26" />
+<meta name="date" content="2020-03-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="app-transcripts.html"/>
+<link rel="prev" href="appC.html"/>
 <link rel="next" href="appE.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/header-attrs-2.1.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,15 +51,12 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
@@ -120,29 +117,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
-
 </head>
 
 <body>
@@ -155,10 +129,7 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Abstract</a>
-<ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#colophon"><i class="fa fa-check"></i>Colophon</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Abstract</a></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#background"><i class="fa fa-check"></i><b>1.1</b> Background and Importance of the Topic</a></li>
@@ -166,12 +137,11 @@ div.csl-indent {
 <li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#purpose"><i class="fa fa-check"></i><b>1.3</b> Purpose of the Study</a></li>
 <li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#rq"><i class="fa fa-check"></i><b>1.4</b> Research Questions</a>
 <ul>
-<li class="chapter" data-level="1.4.1" data-path="intro.html"><a href="intro.html#overarching-qualitative-research-questions"><i class="fa fa-check"></i><b>1.4.1</b> Overarching Qualitative Research Questions</a></li>
-<li class="chapter" data-level="1.4.2" data-path="intro.html"><a href="intro.html#quantitative-research-questions"><i class="fa fa-check"></i><b>1.4.2</b> Quantitative Research Questions</a></li>
+<li class="chapter" data-level="1.4.1" data-path="intro.html"><a href="intro.html#qual-rq"><i class="fa fa-check"></i><b>1.4.1</b> Overarching Qualitative Research Questions</a></li>
+<li class="chapter" data-level="1.4.2" data-path="intro.html"><a href="intro.html#quan-rq"><i class="fa fa-check"></i><b>1.4.2</b> Quantitative Research Questions</a></li>
 </ul></li>
 <li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#significance"><i class="fa fa-check"></i><b>1.5</b> Significance and Value of the Study</a></li>
 <li class="chapter" data-level="1.6" data-path="intro.html"><a href="intro.html#limitation"><i class="fa fa-check"></i><b>1.6</b> Possible Study Limitations</a></li>
-<li class="chapter" data-level="1.7" data-path="intro.html"><a href="intro.html#intro-summary"><i class="fa fa-check"></i><b>1.7</b> Chapter Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="lit-review.html"><a href="lit-review.html"><i class="fa fa-check"></i><b>2</b> Literature Review</a>
 <ul>
@@ -198,103 +168,23 @@ div.csl-indent {
 <li class="chapter" data-level="3" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>3</b> Methods</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="methods.html"><a href="methods.html#rd"><i class="fa fa-check"></i><b>3.1</b> Research Design</a></li>
-<li class="chapter" data-level="3.2" data-path="methods.html"><a href="methods.html#research-ethics-and-procedures"><i class="fa fa-check"></i><b>3.2</b> Research Ethics and Procedures</a></li>
-<li class="chapter" data-level="3.3" data-path="methods.html"><a href="methods.html#research-questions"><i class="fa fa-check"></i><b>3.3</b> Research Questions</a>
+<li class="chapter" data-level="3.2" data-path="methods.html"><a href="methods.html#dc"><i class="fa fa-check"></i><b>3.2</b> Data Collection</a></li>
+<li class="chapter" data-level="3.3" data-path="methods.html"><a href="methods.html#da"><i class="fa fa-check"></i><b>3.3</b> Data Analysis Procedures</a>
 <ul>
-<li class="chapter" data-level="3.3.1" data-path="methods.html"><a href="methods.html#quantitative-research-questions-1"><i class="fa fa-check"></i><b>3.3.1</b> Quantitative Research Questions</a></li>
-<li class="chapter" data-level="3.3.2" data-path="methods.html"><a href="methods.html#qualitative-research-questions"><i class="fa fa-check"></i><b>3.3.2</b> Qualitative Research Questions</a></li>
-<li class="chapter" data-level="3.3.3" data-path="methods.html"><a href="methods.html#hybrid-mixed-methods-question"><i class="fa fa-check"></i><b>3.3.3</b> Hybrid Mixed Methods Question</a></li>
+<li class="chapter" data-level="3.3.1" data-path="methods.html"><a href="methods.html#extraction"><i class="fa fa-check"></i><b>3.3.1</b> Phase I: Data Extraction</a></li>
+<li class="chapter" data-level="3.3.2" data-path="methods.html"><a href="methods.html#transformation"><i class="fa fa-check"></i><b>3.3.2</b> Phase II and III: Data Cleaning and Transformation</a></li>
+<li class="chapter" data-level="3.3.3" data-path="methods.html"><a href="methods.html#tm"><i class="fa fa-check"></i><b>3.3.3</b> Phase IV: Text Mining</a></li>
+<li class="chapter" data-level="3.3.4" data-path="methods.html"><a href="methods.html#results"><i class="fa fa-check"></i><b>3.3.4</b> Phase V: Results Evaluation and Interpretation</a></li>
 </ul></li>
-<li class="chapter" data-level="3.4" data-path="methods.html"><a href="methods.html#setting-and-sample"><i class="fa fa-check"></i><b>3.4</b> Setting and Sample</a></li>
-<li class="chapter" data-level="3.5" data-path="methods.html"><a href="methods.html#positionality"><i class="fa fa-check"></i><b>3.5</b> Positionality</a></li>
-<li class="chapter" data-level="3.6" data-path="methods.html"><a href="methods.html#dc"><i class="fa fa-check"></i><b>3.6</b> Data Collection</a>
-<ul>
-<li class="chapter" data-level="3.6.1" data-path="methods.html"><a href="methods.html#dc-participant"><i class="fa fa-check"></i><b>3.6.1</b> Computational Participant-Observation</a></li>
-<li class="chapter" data-level="3.6.2" data-path="methods.html"><a href="methods.html#dc-interview"><i class="fa fa-check"></i><b>3.6.2</b> Semi-Structured Interviews</a></li>
-</ul></li>
-<li class="chapter" data-level="3.7" data-path="methods.html"><a href="methods.html#da"><i class="fa fa-check"></i><b>3.7</b> Data Analysis Procedure</a>
-<ul>
-<li class="chapter" data-level="3.7.1" data-path="methods.html"><a href="methods.html#extraction"><i class="fa fa-check"></i><b>3.7.1</b> Phase I: Data Extraction</a></li>
-<li class="chapter" data-level="3.7.2" data-path="methods.html"><a href="methods.html#transformation"><i class="fa fa-check"></i><b>3.7.2</b> Phase II and III: Data Cleaning and Transformation</a></li>
-<li class="chapter" data-level="3.7.3" data-path="methods.html"><a href="methods.html#tm"><i class="fa fa-check"></i><b>3.7.3</b> Phase IV: Text Mining</a></li>
-<li class="chapter" data-level="3.7.4" data-path="methods.html"><a href="methods.html#results"><i class="fa fa-check"></i><b>3.7.4</b> Phase V: Results Evaluation and Interpretation</a></li>
-</ul></li>
-<li class="chapter" data-level="3.8" data-path="methods.html"><a href="methods.html#timeline"><i class="fa fa-check"></i><b>3.8</b> Timeline of the Study</a></li>
-<li class="chapter" data-level="3.9" data-path="methods.html"><a href="methods.html#introduction"><i class="fa fa-check"></i><b>3.9</b> Introduction</a></li>
-<li class="chapter" data-level="3.10" data-path="methods.html"><a href="methods.html#research-design"><i class="fa fa-check"></i><b>3.10</b> Research Design</a></li>
-<li class="chapter" data-level="3.11" data-path="methods.html"><a href="methods.html#research-questions-and-hypotheses"><i class="fa fa-check"></i><b>3.11</b> Research Questions and Hypotheses</a></li>
-<li class="chapter" data-level="3.12" data-path="methods.html"><a href="methods.html#setting-and-sample-1"><i class="fa fa-check"></i><b>3.12</b> Setting and Sample</a></li>
-<li class="chapter" data-level="3.13" data-path="methods.html"><a href="methods.html#data-collection"><i class="fa fa-check"></i><b>3.13</b> Data Collection</a></li>
-<li class="chapter" data-level="3.14" data-path="methods.html"><a href="methods.html#data-analysis"><i class="fa fa-check"></i><b>3.14</b> Data Analysis</a></li>
-<li class="chapter" data-level="3.15" data-path="methods.html"><a href="methods.html#methods-summary"><i class="fa fa-check"></i><b>3.15</b> Chapter Summary</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="findings.html"><a href="findings.html"><i class="fa fa-check"></i><b>4</b> Research Findings</a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="findings.html"><a href="findings.html#introduction-1"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
-<li class="chapter" data-level="4.2" data-path="findings.html"><a href="findings.html#findings-organized-by-research-questions-or-hypotheses"><i class="fa fa-check"></i><b>4.2</b> Findings (organized by Research Questions or Hypotheses)</a>
-<ul>
-<li class="chapter" data-level="4.2.1" data-path="findings.html"><a href="findings.html#quantitative-research-questions-2"><i class="fa fa-check"></i><b>4.2.1</b> Quantitative Research Questions</a></li>
-<li class="chapter" data-level="4.2.2" data-path="findings.html"><a href="findings.html#overarching-qualitative-research-questions-1"><i class="fa fa-check"></i><b>4.2.2</b> Overarching Qualitative Research Questions</a></li>
-</ul></li>
-<li class="chapter" data-level="4.3" data-path="findings.html"><a href="findings.html#finding-summary"><i class="fa fa-check"></i><b>4.3</b> Chapter Summary</a></li>
-<li class="chapter" data-level="4.4" data-path="findings.html"><a href="findings.html#tf-idf"><i class="fa fa-check"></i><b>4.4</b> TF-IDF</a></li>
-<li class="chapter" data-level="4.5" data-path="findings.html"><a href="findings.html#network-graphs"><i class="fa fa-check"></i><b>4.5</b> Network Graphs</a>
-<ul>
-<li class="chapter" data-level="4.5.1" data-path="findings.html"><a href="findings.html#co-occurrance-network"><i class="fa fa-check"></i><b>4.5.1</b> Co-Occurrance Network</a></li>
-<li class="chapter" data-level="4.5.2" data-path="findings.html"><a href="findings.html#correlation-network"><i class="fa fa-check"></i><b>4.5.2</b> Correlation Network</a></li>
-<li class="chapter" data-level="4.5.3" data-path="findings.html"><a href="findings.html#n-gram-network"><i class="fa fa-check"></i><b>4.5.3</b> N-Gram Network</a></li>
-</ul></li>
-<li class="chapter" data-level="4.6" data-path="findings.html"><a href="findings.html#latent-dirichlet-allocation-lda"><i class="fa fa-check"></i><b>4.6</b> Latent Dirichlet Allocation (LDA)</a>
-<ul>
-<li class="chapter" data-level="4.6.1" data-path="findings.html"><a href="findings.html#preprocessing"><i class="fa fa-check"></i><b>4.6.1</b> Preprocessing</a></li>
-<li class="chapter" data-level="4.6.2" data-path="findings.html"><a href="findings.html#tuning"><i class="fa fa-check"></i><b>4.6.2</b> Tuning</a></li>
-<li class="chapter" data-level="4.6.3" data-path="findings.html"><a href="findings.html#output"><i class="fa fa-check"></i><b>4.6.3</b> Output</a></li>
-</ul></li>
-<li class="chapter" data-level="4.7" data-path="findings.html"><a href="findings.html#structural-topic-model-stm"><i class="fa fa-check"></i><b>4.7</b> Structural Topic Model (STM)</a>
-<ul>
-<li class="chapter" data-level="4.7.1" data-path="findings.html"><a href="findings.html#preprocessing-1"><i class="fa fa-check"></i><b>4.7.1</b> Preprocessing</a></li>
-<li class="chapter" data-level="4.7.2" data-path="findings.html"><a href="findings.html#tuning-1"><i class="fa fa-check"></i><b>4.7.2</b> Tuning</a></li>
-<li class="chapter" data-level="4.7.3" data-path="findings.html"><a href="findings.html#output-1"><i class="fa fa-check"></i><b>4.7.3</b> Output</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusions, Discussion, and Suggestions for Future Research</a>
-<ul>
-<li class="chapter" data-level="5.1" data-path="conclusion.html"><a href="conclusion.html#introduction-2"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
-<li class="chapter" data-level="5.2" data-path="conclusion.html"><a href="conclusion.html#summary-of-findings"><i class="fa fa-check"></i><b>5.2</b> Summary of Findings</a></li>
-<li class="chapter" data-level="5.3" data-path="conclusion.html"><a href="conclusion.html#conclusions-organized-by-research-questions-or-hypotheses"><i class="fa fa-check"></i><b>5.3</b> Conclusions (organized by Research Questions or Hypotheses)</a></li>
-<li class="chapter" data-level="5.4" data-path="conclusion.html"><a href="conclusion.html#discussion"><i class="fa fa-check"></i><b>5.4</b> Discussion</a></li>
-<li class="chapter" data-level="5.5" data-path="conclusion.html"><a href="conclusion.html#suggestions-for-future-research"><i class="fa fa-check"></i><b>5.5</b> Suggestions for Future Research</a></li>
-<li class="chapter" data-level="5.6" data-path="conclusion.html"><a href="conclusion.html#conclusion-summary"><i class="fa fa-check"></i><b>5.6</b> Chapter Summary</a></li>
+<li class="chapter" data-level="3.4" data-path="methods.html"><a href="methods.html#timeline"><i class="fa fa-check"></i><b>3.4</b> Timeline of the Study</a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
-<li class="chapter" data-level="A" data-path="app-irb.html"><a href="app-irb.html"><i class="fa fa-check"></i><b>A</b> Determination Letter from the Office for Research Protections</a></li>
-<li class="chapter" data-level="B" data-path="app-nfb.html"><a href="app-nfb.html"><i class="fa fa-check"></i><b>B</b> The National Federation of the Blind (NFB) Materials</a>
-<ul>
-<li class="chapter" data-level="B.1" data-path="app-nfb.html"><a href="app-nfb.html#gate-keeper"><i class="fa fa-check"></i><b>B.1</b> Contact with a Gatekeeper of the NFB Community</a></li>
-<li class="chapter" data-level="B.2" data-path="app-nfb.html"><a href="app-nfb.html#nfb-research-form"><i class="fa fa-check"></i><b>B.2</b> Research Participant Solicitation Request Form</a></li>
-<li class="chapter" data-level="B.3" data-path="app-nfb.html"><a href="app-nfb.html#nfb-approval"><i class="fa fa-check"></i><b>B.3</b> Official Approvals from the NFB Research Advisory Council</a></li>
-</ul></li>
-<li class="chapter" data-level="C" data-path="app-interview.html"><a href="app-interview.html"><i class="fa fa-check"></i><b>C</b> Interview Materials</a>
-<ul>
-<li class="chapter" data-level="C.1" data-path="app-interview.html"><a href="app-interview.html#recruitment-materials"><i class="fa fa-check"></i><b>C.1</b> Recruitment Materials</a></li>
-<li class="chapter" data-level="C.2" data-path="app-interview.html"><a href="app-interview.html#consent-form"><i class="fa fa-check"></i><b>C.2</b> Interview Consent Form</a></li>
-<li class="chapter" data-level="C.3" data-path="app-interview.html"><a href="app-interview.html#interview-protocol"><i class="fa fa-check"></i><b>C.3</b> Semi-Structured Interview Protocol</a></li>
-</ul></li>
-<li class="chapter" data-level="D" data-path="appC.html"><a href="appC.html"><i class="fa fa-check"></i><b>D</b> Unix Shell Commands for Data Extraction</a></li>
-<li class="chapter" data-level="E" data-path="app-transcripts.html"><a href="app-transcripts.html"><i class="fa fa-check"></i><b>E</b> Interview Transcripts</a>
-<ul>
-<li class="chapter" data-level="E.1" data-path="app-transcripts.html"><a href="app-transcripts.html#p1"><i class="fa fa-check"></i><b>E.1</b> Participant 1</a></li>
-<li class="chapter" data-level="E.2" data-path="app-transcripts.html"><a href="app-transcripts.html#p2"><i class="fa fa-check"></i><b>E.2</b> Participant 2</a></li>
-<li class="chapter" data-level="E.3" data-path="app-transcripts.html"><a href="app-transcripts.html#p3"><i class="fa fa-check"></i><b>E.3</b> Participant 3</a></li>
-<li class="chapter" data-level="E.4" data-path="app-transcripts.html"><a href="app-transcripts.html#p4"><i class="fa fa-check"></i><b>E.4</b> Participant 4</a></li>
-<li class="chapter" data-level="E.5" data-path="app-transcripts.html"><a href="app-transcripts.html#p5"><i class="fa fa-check"></i><b>E.5</b> Participant 5</a></li>
-<li class="chapter" data-level="E.6" data-path="app-transcripts.html"><a href="app-transcripts.html#p6"><i class="fa fa-check"></i><b>E.6</b> Participant 6</a></li>
-<li class="chapter" data-level="E.7" data-path="app-transcripts.html"><a href="app-transcripts.html#p7"><i class="fa fa-check"></i><b>E.7</b> Participant 7</a></li>
-<li class="chapter" data-level="E.8" data-path="app-transcripts.html"><a href="app-transcripts.html#p8"><i class="fa fa-check"></i><b>E.8</b> Participant 8</a></li>
-</ul></li>
-<li class="chapter" data-level="F" data-path="appD.html"><a href="appD.html"><i class="fa fa-check"></i><b>F</b> R Script Used for Data Cleaning and Transformation</a></li>
-<li class="chapter" data-level="G" data-path="appE.html"><a href="appE.html"><i class="fa fa-check"></i><b>G</b> R Script Used for Text Mining</a></li>
-<li class="chapter" data-level="H" data-path="app-code.html"><a href="app-code.html"><i class="fa fa-check"></i><b>H</b> R Source Code Used for Data Analyses</a></li>
+<li class="chapter" data-level="A" data-path="appA.html"><a href="appA.html"><i class="fa fa-check"></i><b>A</b> Determination Letter from the Office for Research Protections</a></li>
+<li class="chapter" data-level="B" data-path="appB.html"><a href="appB.html"><i class="fa fa-check"></i><b>B</b> Contact with a Gatekeeper of the Study Target Community</a></li>
+<li class="chapter" data-level="C" data-path="appC.html"><a href="appC.html"><i class="fa fa-check"></i><b>C</b> Unix Shell Commands for Data Extraction</a></li>
+<li class="chapter" data-level="D" data-path="appD.html"><a href="appD.html"><i class="fa fa-check"></i><b>D</b> R Script Used for Data Cleaning and Transformation</a></li>
+<li class="chapter" data-level="E" data-path="appE.html"><a href="appE.html"><i class="fa fa-check"></i><b>E</b> R Script Used for Text Mining</a></li>
+<li class="chapter" data-level="F" data-path="appF.html"><a href="appF.html"><i class="fa fa-check"></i><b>F</b> Accepted Letter for the 2019 ICQE Doctoral Consortium</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 </ul>
 
@@ -313,47 +203,40 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="appD" class="section level1" number="11">
-<h1><span class="header-section-number">Appendix F:</span> R Script Used for Data Cleaning and Transformation</h1>
+<div id="appD" class="section level1" number="7">
+<h1><span class="header-section-number">Appendix D:</span> R Script Used for Data Cleaning and Transformation</h1>
 <p>For the data cleaning and transformation, two open-source languages, R and Python, are required on your system. Download and install R from <a href="https://cran.r-project.org/bin/windows/base/">The R-project for statistical computing</a>; Python from <a href="https://www.anaconda.com/distribution/">Anaconda Distribution</a>.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="appD.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Selecting a CRAN Mirror:</span></span>
-<span id="cb3-2"><a href="appD.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chooseCRANmirror</span>(<span class="at">ind =</span> <span class="dv">1</span>)</span>
-<span id="cb3-3"><a href="appD.html#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="appD.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Installing Required Packages:</span></span>
-<span id="cb3-5"><a href="appD.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">&quot;mboxr&quot;</span>, <span class="st">&quot;tidyverse&quot;</span>))</span>
-<span id="cb3-6"><a href="appD.html#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="appD.html#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Loading the Installed Packages within current R session:</span></span>
-<span id="cb3-8"><a href="appD.html#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mboxr)</span>
-<span id="cb3-9"><a href="appD.html#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb3-10"><a href="appD.html#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="appD.html#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Resaving Plain-Text Mbox Files into One Structured R Data:</span></span>
-<span id="cb3-12"><a href="appD.html#cb3-12" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">merge_mbox_all</span>(<span class="at">path =</span> <span class="st">&quot;[path/to/mbox_directory]&quot;</span>, <span class="at">file =</span> <span class="st">&quot;[output_file_name.rds]&quot;</span>) <span class="co"># Do this command for each of the four mailing archives.</span></span>
-<span id="cb3-13"><a href="appD.html#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-14"><a href="appD.html#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Making Sure Whether the Data Has Been Structured:</span></span>
-<span id="cb3-15"><a href="appD.html#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(data)</span>
-<span id="cb3-16"><a href="appD.html#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-17"><a href="appD.html#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="co"># &quot;From&quot; Escaping Issue in Target Archives</span></span>
-<span id="cb3-18"><a href="appD.html#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="do">## The following mbox files have non-escaped &quot;From &quot; issue that means a new line starting with the word &quot;From &quot; in the mail body is mistakenly treated by a Python mbox parser as a breaking point between each message &quot;From&quot; line.</span></span>
-<span id="cb3-19"><a href="appD.html#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="do">## To resolve this issue, I have to replace &quot;From &quot; with &quot;&gt;From &quot; for every occurrence found in mail body to escape.</span></span>
-<span id="cb3-20"><a href="appD.html#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-21"><a href="appD.html#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="do">### Five files have this issue in NFB-CS archive:</span></span>
-<span id="cb3-22"><a href="appD.html#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2013-April.mbox</span></span>
-<span id="cb3-23"><a href="appD.html#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2013-November.mbox</span></span>
-<span id="cb3-24"><a href="appD.html#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2016-July.mbox</span></span>
-<span id="cb3-25"><a href="appD.html#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2017-February.mbox</span></span>
-<span id="cb3-26"><a href="appD.html#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2017-May.mbox</span></span>
-<span id="cb3-27"><a href="appD.html#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-28"><a href="appD.html#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="do">### No file has escaping issue in both Science and Arts archives.</span></span>
-<span id="cb3-29"><a href="appD.html#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-30"><a href="appD.html#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="do">### Eight files have the escaping issue in BlindMath archive:</span></span>
-<span id="cb3-31"><a href="appD.html#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2012-May.mbox</span></span>
-<span id="cb3-32"><a href="appD.html#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2013-November.mbox</span></span>
-<span id="cb3-33"><a href="appD.html#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2014-August.mbox</span></span>
-<span id="cb3-34"><a href="appD.html#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2015-January.mbox</span></span>
-<span id="cb3-35"><a href="appD.html#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2016-March.mbox</span></span>
-<span id="cb3-36"><a href="appD.html#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2017-February.mbox</span></span>
-<span id="cb3-37"><a href="appD.html#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2018-May.mbox</span></span>
-<span id="cb3-38"><a href="appD.html#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2019-March.mbox</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="appD.html#cb2-1"></a><span class="co"># Selecting a CRAN Mirror:</span></span>
+<span id="cb2-2"><a href="appD.html#cb2-2"></a><span class="kw">chooseCRANmirror</span>(<span class="dt">ind =</span> <span class="dv">1</span>)</span>
+<span id="cb2-3"><a href="appD.html#cb2-3"></a></span>
+<span id="cb2-4"><a href="appD.html#cb2-4"></a><span class="co"># Installing Required Packages:</span></span>
+<span id="cb2-5"><a href="appD.html#cb2-5"></a><span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">&quot;mboxr&quot;</span>, <span class="st">&quot;tidyverse&quot;</span>))</span>
+<span id="cb2-6"><a href="appD.html#cb2-6"></a></span>
+<span id="cb2-7"><a href="appD.html#cb2-7"></a><span class="co"># Loading the Installed Packages within current R session:</span></span>
+<span id="cb2-8"><a href="appD.html#cb2-8"></a><span class="kw">library</span>(mboxr)</span>
+<span id="cb2-9"><a href="appD.html#cb2-9"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb2-10"><a href="appD.html#cb2-10"></a></span>
+<span id="cb2-11"><a href="appD.html#cb2-11"></a><span class="co"># Resaving Plain-Text Mbox Files into One Structured R Data:</span></span>
+<span id="cb2-12"><a href="appD.html#cb2-12"></a>data &lt;-<span class="st"> </span><span class="kw">merge_mbox_all</span>(<span class="dt">path =</span> <span class="st">&quot;[path/to/mbox_directory]&quot;</span>, <span class="dt">file =</span> <span class="st">&quot;[output_file_name.rds]&quot;</span>)  <span class="co"># Do this command for each of the four mailing archives.</span></span>
+<span id="cb2-13"><a href="appD.html#cb2-13"></a></span>
+<span id="cb2-14"><a href="appD.html#cb2-14"></a><span class="co"># Making Sure Whether the Data Has Benn Structured:</span></span>
+<span id="cb2-15"><a href="appD.html#cb2-15"></a><span class="kw">glimpse</span>(data)</span>
+<span id="cb2-16"><a href="appD.html#cb2-16"></a></span>
+<span id="cb2-17"><a href="appD.html#cb2-17"></a><span class="co"># &#39;From&#39; Escaping Issue in Target Archives The following mbox files have</span></span>
+<span id="cb2-18"><a href="appD.html#cb2-18"></a><span class="co"># non-escaped &#39;From &#39; issue that means a new line starting with the word &#39;From &#39;</span></span>
+<span id="cb2-19"><a href="appD.html#cb2-19"></a><span class="co"># in the mail body is mistakenly treated by a Python mbox parser as a breaking</span></span>
+<span id="cb2-20"><a href="appD.html#cb2-20"></a><span class="co"># point between each message &#39;From&#39; line.  To resolve this issue, I have to</span></span>
+<span id="cb2-21"><a href="appD.html#cb2-21"></a><span class="co"># replace &#39;From &#39; with &#39;&gt;From &#39; for every occurrence found in mail body to</span></span>
+<span id="cb2-22"><a href="appD.html#cb2-22"></a><span class="co"># escape.</span></span>
+<span id="cb2-23"><a href="appD.html#cb2-23"></a></span>
+<span id="cb2-24"><a href="appD.html#cb2-24"></a><span class="co">### Five files have this issue in NFB-CS archive: * 2013-April.mbox *</span></span>
+<span id="cb2-25"><a href="appD.html#cb2-25"></a><span class="co">### 2013-November.mbox * 2016-July.mbox * 2017-February.mbox * 2017-May.mbox</span></span>
+<span id="cb2-26"><a href="appD.html#cb2-26"></a></span>
+<span id="cb2-27"><a href="appD.html#cb2-27"></a><span class="co">### No file has escaping issue in both Science and Arts archives.</span></span>
+<span id="cb2-28"><a href="appD.html#cb2-28"></a></span>
+<span id="cb2-29"><a href="appD.html#cb2-29"></a><span class="co">### Eight files have the escaping issue in BlindMath archive: * 2012-May.mbox *</span></span>
+<span id="cb2-30"><a href="appD.html#cb2-30"></a><span class="co">### 2013-November.mbox * 2014-August.mbox * 2015-January.mbox * 2016-March.mbox *</span></span>
+<span id="cb2-31"><a href="appD.html#cb2-31"></a><span class="co">### 2017-February.mbox * 2018-May.mbox * 2019-March.mbox</span></span></code></pre></div>
 
 </div>
             </section>
@@ -361,7 +244,7 @@ div.csl-indent {
           </div>
         </div>
       </div>
-<a href="app-transcripts.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="appC.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="appE.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
@@ -385,7 +268,6 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -405,7 +287,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["dissertation.epub", "dissertation.docx"],
+"download": ["proposal.epub", "proposal.docx"],
 "toc": {
 "collapse": "subsection"
 }

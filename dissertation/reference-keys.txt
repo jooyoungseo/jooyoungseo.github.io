@@ -225,13 +225,3 @@ app-table-bigram
 app-table-stm
 app-code
 app-helper-function
-latent-dirichlet-allocation-lda
-preprocessing
-tuning
-output
-visualization
-topic-term-matrix-beta
-document-topic-matrix-gamma
-table
-topic-term-matrix-beta-1
-document-topic-matrix-gamma-1
