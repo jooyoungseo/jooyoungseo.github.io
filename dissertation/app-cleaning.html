@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Appendix G: R Script Used for Data Cleaning and Transformation | Discovering Informal Learning Cultures of Blind Individuals Pursuing STEM Disciplines</title>
+  <meta name="description" content="JooYoung Seo’s dissertation submitted to the Pennsylvania State University" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Appendix G: R Script Used for Data Cleaning and Transformation | Discovering Informal Learning Cultures of Blind Individuals Pursuing STEM Disciplines" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://www.jooyoungseo.com/dissertation" />
+  
+  <meta property="og:description" content="JooYoung Seo’s dissertation submitted to the Pennsylvania State University" />
+  <meta name="github-repo" content="jooyoungseo/dissertation" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Appendix G: R Script Used for Data Cleaning and Transformation | Discovering Informal Learning Cultures of Blind Individuals Pursuing STEM Disciplines" />
+  
+  <meta name="twitter:description" content="JooYoung Seo’s dissertation submitted to the Pennsylvania State University" />
+  
+
+<meta name="author" content="JooYoung Seo" />
+
+
+<meta name="date" content="2021-05-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="appE.html"/>
+<link rel="next" href="app-table.html"/>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<script src="libs/plotly-binding-4.9.3/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#background"><i class="fa fa-check"></i><b>1.1</b> Background and Importance of the Topic</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#gap"><i class="fa fa-check"></i><b>1.2</b> Research Problem: A Knowledge Gap</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#purpose"><i class="fa fa-check"></i><b>1.3</b> Purpose of the Study</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#rq"><i class="fa fa-check"></i><b>1.4</b> Research Questions</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="intro.html"><a href="intro.html#quan-rq"><i class="fa fa-check"></i><b>1.4.1</b> Quantitative Research Questions</a></li>
+<li class="chapter" data-level="1.4.2" data-path="intro.html"><a href="intro.html#qual-rq"><i class="fa fa-check"></i><b>1.4.2</b> Qualitative Research Questions</a></li>
+<li class="chapter" data-level="1.4.3" data-path="intro.html"><a href="intro.html#mixed-rq"><i class="fa fa-check"></i><b>1.4.3</b> Hybrid Mixed Methods Question</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#significance"><i class="fa fa-check"></i><b>1.5</b> Significance and Value of the Study</a></li>
+<li class="chapter" data-level="1.6" data-path="intro.html"><a href="intro.html#limitation"><i class="fa fa-check"></i><b>1.6</b> Possible Study Limitations</a></li>
+<li class="chapter" data-level="1.7" data-path="intro.html"><a href="intro.html#intro-summary"><i class="fa fa-check"></i><b>1.7</b> Chapter Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="lit-review.html"><a href="lit-review.html"><i class="fa fa-check"></i><b>2</b> Literature Review</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="lit-review.html"><a href="lit-review.html#lit-intro"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="lit-review.html"><a href="lit-review.html#definition"><i class="fa fa-check"></i><b>2.2</b> What is STEM?</a></li>
+<li class="chapter" data-level="2.3" data-path="lit-review.html"><a href="lit-review.html#bibliometrics"><i class="fa fa-check"></i><b>2.3</b> Growing Trends of STEM Learning</a></li>
+<li class="chapter" data-level="2.4" data-path="lit-review.html"><a href="lit-review.html#theory-framework"><i class="fa fa-check"></i><b>2.4</b> Theoretical Frameworks</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="lit-review.html"><a href="lit-review.html#ecological-model"><i class="fa fa-check"></i><b>2.4.1</b> Ecological Model of STEM Education</a></li>
+<li class="chapter" data-level="2.4.2" data-path="lit-review.html"><a href="lit-review.html#disability-model"><i class="fa fa-check"></i><b>2.4.2</b> Political/Relational Model of Disability</a></li>
+<li class="chapter" data-level="2.4.3" data-path="lit-review.html"><a href="lit-review.html#socioculture"><i class="fa fa-check"></i><b>2.4.3</b> Sociocultural Perspective towards Collaborative Shared Cognition</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="lit-review.html"><a href="lit-review.html#stem-issue"><i class="fa fa-check"></i><b>2.5</b> Three Issues in Current STEM Education: Equity; Inclusivity; and Accessibility</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="lit-review.html"><a href="lit-review.html#equity"><i class="fa fa-check"></i><b>2.5.1</b> Equity Issue of Gendered Disparity</a></li>
+<li class="chapter" data-level="2.5.2" data-path="lit-review.html"><a href="lit-review.html#inclusivity"><i class="fa fa-check"></i><b>2.5.2</b> Inclusivity Issue of Ethnic/Racial Diversity</a></li>
+<li class="chapter" data-level="2.5.3" data-path="lit-review.html"><a href="lit-review.html#accessibility"><i class="fa fa-check"></i><b>2.5.3</b> Accessibility Issue of Discriminating Dis/Abilities</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="lit-review.html"><a href="lit-review.html#overview-ca"><i class="fa fa-check"></i><b>2.6</b> Overview of Computer-Assisted Text Analysis</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="lit-review.html"><a href="lit-review.html#supervised"><i class="fa fa-check"></i><b>2.6.1</b> Deductive Text Classification Using Supervised Machine Learning</a></li>
+<li class="chapter" data-level="2.6.2" data-path="lit-review.html"><a href="lit-review.html#unsupervised"><i class="fa fa-check"></i><b>2.6.2</b> Inductive Text Clustering Using Unsupervised Machine Learning</a></li>
+<li class="chapter" data-level="2.6.3" data-path="lit-review.html"><a href="lit-review.html#stm"><i class="fa fa-check"></i><b>2.6.3</b> Abductive Text Interpretation Using Structural Topic modeling</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="lit-review.html"><a href="lit-review.html#lit-summary"><i class="fa fa-check"></i><b>2.7</b> Chapter Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>3</b> Methods</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="methods.html"><a href="methods.html#methods-intro"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="methods.html"><a href="methods.html#rd"><i class="fa fa-check"></i><b>3.2</b> Research Design</a></li>
+<li class="chapter" data-level="3.3" data-path="methods.html"><a href="methods.html#research-ethics-and-procedures"><i class="fa fa-check"></i><b>3.3</b> Research Ethics and Procedures</a></li>
+<li class="chapter" data-level="3.4" data-path="methods.html"><a href="methods.html#methods-rq"><i class="fa fa-check"></i><b>3.4</b> Research Questions</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="intro.html"><a href="intro.html#quan-rq"><i class="fa fa-check"></i><b>3.4.1</b> Quantitative Research Questions</a></li>
+<li class="chapter" data-level="3.4.2" data-path="intro.html"><a href="intro.html#qual-rq"><i class="fa fa-check"></i><b>3.4.2</b> Qualitative Research Questions</a></li>
+<li class="chapter" data-level="3.4.3" data-path="intro.html"><a href="intro.html#mixed-rq"><i class="fa fa-check"></i><b>3.4.3</b> Hybrid Mixed Methods Question</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="methods.html"><a href="methods.html#setting-and-sample"><i class="fa fa-check"></i><b>3.5</b> Setting and Sample</a></li>
+<li class="chapter" data-level="3.6" data-path="methods.html"><a href="methods.html#positionality"><i class="fa fa-check"></i><b>3.6</b> Positionality</a></li>
+<li class="chapter" data-level="3.7" data-path="methods.html"><a href="methods.html#dc"><i class="fa fa-check"></i><b>3.7</b> Data Collection</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="methods.html"><a href="methods.html#dc-participant"><i class="fa fa-check"></i><b>3.7.1</b> Computational Participant-Observation</a></li>
+<li class="chapter" data-level="3.7.2" data-path="methods.html"><a href="methods.html#dc-interview"><i class="fa fa-check"></i><b>3.7.2</b> Semi-Structured Interviews</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="methods.html"><a href="methods.html#da"><i class="fa fa-check"></i><b>3.8</b> Data Analysis Procedure</a>
+<ul>
+<li class="chapter" data-level="3.8.1" data-path="methods.html"><a href="methods.html#extraction"><i class="fa fa-check"></i><b>3.8.1</b> Phase I: Data Extraction</a></li>
+<li class="chapter" data-level="3.8.2" data-path="methods.html"><a href="methods.html#transformation"><i class="fa fa-check"></i><b>3.8.2</b> Phase II and III: Data Cleaning and Transformation</a></li>
+<li class="chapter" data-level="3.8.3" data-path="methods.html"><a href="methods.html#tm"><i class="fa fa-check"></i><b>3.8.3</b> Phase IV: Text Mining</a></li>
+<li class="chapter" data-level="3.8.4" data-path="methods.html"><a href="methods.html#results"><i class="fa fa-check"></i><b>3.8.4</b> Phase V: Results Evaluation and Interpretation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.9" data-path="methods.html"><a href="methods.html#methods-summary"><i class="fa fa-check"></i><b>3.9</b> Chapter Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="findings.html"><a href="findings.html"><i class="fa fa-check"></i><b>4</b> Research Findings</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="findings.html"><a href="findings.html#findings-intro"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="findings.html"><a href="findings.html#findings-quan-rq"><i class="fa fa-check"></i><b>4.2</b> Results from the Computational Participant-Observation</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="findings.html"><a href="findings.html#findings-quan-rq-descriptive"><i class="fa fa-check"></i><b>4.2.1</b> Descriptive Questions</a></li>
+<li class="chapter" data-level="4.2.2" data-path="findings.html"><a href="findings.html#findings-quan-rq-network"><i class="fa fa-check"></i><b>4.2.2</b> Semantic Network Questions</a></li>
+<li class="chapter" data-level="4.2.3" data-path="findings.html"><a href="findings.html#findings-quan-rq-stm"><i class="fa fa-check"></i><b>4.2.3</b> Data Clustering Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="findings.html"><a href="findings.html#findings-qual-rq"><i class="fa fa-check"></i><b>4.3</b> Findings from Semi-Structured Interviews</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="findings.html"><a href="findings.html#sdl"><i class="fa fa-check"></i><b>4.3.1</b> Self-Directed Learning Over Lectures</a></li>
+<li class="chapter" data-level="4.3.2" data-path="findings.html"><a href="findings.html#linear-verbal-learning"><i class="fa fa-check"></i><b>4.3.2</b> Linear Verbal Learning</a></li>
+<li class="chapter" data-level="4.3.3" data-path="findings.html"><a href="findings.html#positive-attitudes"><i class="fa fa-check"></i><b>4.3.3</b> Positive Attitudes</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="findings.html"><a href="findings.html#findings-mixed-rq"><i class="fa fa-check"></i><b>4.4</b> Comprehensive Results</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="findings.html"><a href="findings.html#findings-mixed-rq-hybrid"><i class="fa fa-check"></i><b>4.4.1</b> Mixed RQ: What results emerge from comparing the qualitative interviews about the STEM-learning experiences of blind individuals with the computational outcomes derived from the STEM-oriented listservs?</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="findings.html"><a href="findings.html#findings-summary"><i class="fa fa-check"></i><b>4.5</b> Chapter Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Discussion and Conclusions</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="conclusion.html"><a href="conclusion.html#conclusion-intro"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
+<li class="chapter" data-level="5.2" data-path="conclusion.html"><a href="conclusion.html#discussions-and-implications"><i class="fa fa-check"></i><b>5.2</b> Discussions and Implications</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="conclusion.html"><a href="conclusion.html#disconnected-mesosystem"><i class="fa fa-check"></i><b>5.2.1</b> Disconnected Mesosystem</a></li>
+<li class="chapter" data-level="5.2.2" data-path="conclusion.html"><a href="conclusion.html#limited-modality-of-current-assistive-technologies"><i class="fa fa-check"></i><b>5.2.2</b> Limited Modality of Current Assistive Technologies</a></li>
+<li class="chapter" data-level="5.2.3" data-path="conclusion.html"><a href="conclusion.html#lacking-central-resources"><i class="fa fa-check"></i><b>5.2.3</b> Lacking Central Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="conclusion.html"><a href="conclusion.html#conclusions"><i class="fa fa-check"></i><b>5.3</b> Conclusions</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="conclusion.html"><a href="conclusion.html#summary-and-contribution"><i class="fa fa-check"></i><b>5.3.1</b> Summary and Contribution</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="conclusion.html"><a href="conclusion.html#suggestion"><i class="fa fa-check"></i><b>5.4</b> Suggestions for Future Research</a></li>
+<li class="chapter" data-level="5.5" data-path="conclusion.html"><a href="conclusion.html#acknowledgements"><i class="fa fa-check"></i><b>5.5</b> Acknowledgements</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="app-irb.html"><a href="app-irb.html"><i class="fa fa-check"></i><b>A</b> Determination Letter from the Office for Research Protections</a></li>
+<li class="chapter" data-level="B" data-path="app-nfb.html"><a href="app-nfb.html"><i class="fa fa-check"></i><b>B</b> The National Federation of the Blind (NFB) Materials</a>
+<ul>
+<li class="chapter" data-level="B.1" data-path="app-nfb.html"><a href="app-nfb.html#gate-keeper"><i class="fa fa-check"></i><b>B.1</b> Contact with a Gatekeeper of the NFB Community</a></li>
+<li class="chapter" data-level="B.2" data-path="app-nfb.html"><a href="app-nfb.html#nfb-research-form"><i class="fa fa-check"></i><b>B.2</b> Research Participant Solicitation Request Form</a></li>
+<li class="chapter" data-level="B.3" data-path="app-nfb.html"><a href="app-nfb.html#nfb-approval"><i class="fa fa-check"></i><b>B.3</b> Official Approvals from the NFB Research Advisory Council</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="app-interview.html"><a href="app-interview.html"><i class="fa fa-check"></i><b>C</b> Interview Materials</a>
+<ul>
+<li class="chapter" data-level="C.1" data-path="app-interview.html"><a href="app-interview.html#recruitment-materials"><i class="fa fa-check"></i><b>C.1</b> Recruitment Materials</a></li>
+<li class="chapter" data-level="C.2" data-path="app-interview.html"><a href="app-interview.html#consent-form"><i class="fa fa-check"></i><b>C.2</b> Interview Consent Form</a></li>
+<li class="chapter" data-level="C.3" data-path="app-interview.html"><a href="app-interview.html#interview-protocol"><i class="fa fa-check"></i><b>C.3</b> Semi-Structured Interview Protocol</a></li>
+</ul></li>
+<li class="chapter" data-level="D" data-path="app-transcripts.html"><a href="app-transcripts.html"><i class="fa fa-check"></i><b>D</b> Interview Transcripts</a>
+<ul>
+<li class="chapter" data-level="D.1" data-path="app-transcripts.html"><a href="app-transcripts.html#p1"><i class="fa fa-check"></i><b>D.1</b> Participant 1</a></li>
+<li class="chapter" data-level="D.2" data-path="app-transcripts.html"><a href="app-transcripts.html#p2"><i class="fa fa-check"></i><b>D.2</b> Participant 2</a></li>
+<li class="chapter" data-level="D.3" data-path="app-transcripts.html"><a href="app-transcripts.html#p3"><i class="fa fa-check"></i><b>D.3</b> Participant 3</a></li>
+<li class="chapter" data-level="D.4" data-path="app-transcripts.html"><a href="app-transcripts.html#p4"><i class="fa fa-check"></i><b>D.4</b> Participant 4</a></li>
+<li class="chapter" data-level="D.5" data-path="app-transcripts.html"><a href="app-transcripts.html#p5"><i class="fa fa-check"></i><b>D.5</b> Participant 5</a></li>
+<li class="chapter" data-level="D.6" data-path="app-transcripts.html"><a href="app-transcripts.html#p6"><i class="fa fa-check"></i><b>D.6</b> Participant 6</a></li>
+<li class="chapter" data-level="D.7" data-path="app-transcripts.html"><a href="app-transcripts.html#p7"><i class="fa fa-check"></i><b>D.7</b> Participant 7</a></li>
+<li class="chapter" data-level="D.8" data-path="app-transcripts.html"><a href="app-transcripts.html#p8"><i class="fa fa-check"></i><b>D.8</b> Participant 8</a></li>
+</ul></li>
+<li class="chapter" data-level="E" data-path="app-shell.html"><a href="app-shell.html"><i class="fa fa-check"></i><b>E</b> Unix Shell Commands for Data Extraction</a></li>
+<li class="chapter" data-level="F" data-path="appE.html"><a href="appE.html"><i class="fa fa-check"></i><b>F</b> R Script Used for Text Mining</a></li>
+<li class="chapter" data-level="G" data-path="app-cleaning.html"><a href="app-cleaning.html"><i class="fa fa-check"></i><b>G</b> R Script Used for Data Cleaning and Transformation</a></li>
+<li class="chapter" data-level="H" data-path="app-table.html"><a href="app-table.html"><i class="fa fa-check"></i><b>H</b> Supplementary Tables</a>
+<ul>
+<li class="chapter" data-level="H.1" data-path="app-table.html"><a href="app-table.html#app-table-tfidf"><i class="fa fa-check"></i><b>H.1</b> Table for Term Frequency-Inverse Document Frequency</a></li>
+<li class="chapter" data-level="H.2" data-path="app-table.html"><a href="app-table.html#app-table-pair"><i class="fa fa-check"></i><b>H.2</b> Tables for Co-Occurrence Network Analysis</a></li>
+<li class="chapter" data-level="H.3" data-path="app-table.html"><a href="app-table.html#app-table-corr"><i class="fa fa-check"></i><b>H.3</b> Tables for Correlation Network Analysis</a></li>
+<li class="chapter" data-level="H.4" data-path="app-table.html"><a href="app-table.html#app-table-bigram"><i class="fa fa-check"></i><b>H.4</b> Tables for Bigram Network Analysis</a></li>
+<li class="chapter" data-level="H.5" data-path="app-table.html"><a href="app-table.html#app-table-stm"><i class="fa fa-check"></i><b>H.5</b> Tables for Structural Topic Models</a></li>
+</ul></li>
+<li class="chapter" data-level="I" data-path="app-code.html"><a href="app-code.html"><i class="fa fa-check"></i><b>I</b> R Source Code Used for Data Analyses</a>
+<ul>
+<li class="chapter" data-level="I.1" data-path="app-code.html"><a href="app-code.html#app-helper-function"><i class="fa fa-check"></i><b>I.1</b> Customized helper functions</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a>
+<ul>
+<li class="chapter" data-level="I.2" data-path="references.html"><a href="references.html#latent-dirichlet-allocation-lda"><i class="fa fa-check"></i><b>I.2</b> Latent Dirichlet Allocation (LDA)</a>
+<ul>
+<li class="chapter" data-level="I.2.1" data-path="references.html"><a href="references.html#preprocessing"><i class="fa fa-check"></i><b>I.2.1</b> Preprocessing</a></li>
+<li class="chapter" data-level="I.2.2" data-path="references.html"><a href="references.html#tuning"><i class="fa fa-check"></i><b>I.2.2</b> Tuning</a></li>
+<li class="chapter" data-level="I.2.3" data-path="references.html"><a href="references.html#output"><i class="fa fa-check"></i><b>I.2.3</b> Output</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Discovering Informal Learning Cultures of Blind Individuals Pursuing STEM Disciplines</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="app-cleaning" class="section level1" number="12">
+<h1><span class="header-section-number">Appendix G:</span> R Script Used for Data Cleaning and Transformation</h1>
+<p>For the data cleaning and transformation, two open-source languages, R and Python, are required on your system. Download and install R from <a href="https://cran.r-project.org/bin/windows/base/">The R-project for statistical computing</a>; Python from <a href="https://www.anaconda.com/distribution/">Anaconda Distribution</a>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="app-cleaning.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Selecting a CRAN Mirror:</span></span>
+<span id="cb3-2"><a href="app-cleaning.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chooseCRANmirror</span>(<span class="at">ind =</span> <span class="dv">1</span>)</span>
+<span id="cb3-3"><a href="app-cleaning.html#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="app-cleaning.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Installing Required Packages:</span></span>
+<span id="cb3-5"><a href="app-cleaning.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">&quot;mboxr&quot;</span>, <span class="st">&quot;tidyverse&quot;</span>))</span>
+<span id="cb3-6"><a href="app-cleaning.html#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="app-cleaning.html#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Loading the Installed Packages within current R session:</span></span>
+<span id="cb3-8"><a href="app-cleaning.html#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mboxr)</span>
+<span id="cb3-9"><a href="app-cleaning.html#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-10"><a href="app-cleaning.html#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="app-cleaning.html#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Resaving Plain-Text Mbox Files into One Structured R Data:</span></span>
+<span id="cb3-12"><a href="app-cleaning.html#cb3-12" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">merge_mbox_all</span>(<span class="at">path =</span> <span class="st">&quot;[path/to/mbox_directory]&quot;</span>, <span class="at">file =</span> <span class="st">&quot;[output_file_name.rds]&quot;</span>) <span class="co"># Do this command for each of the four mailing archives.</span></span>
+<span id="cb3-13"><a href="app-cleaning.html#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="app-cleaning.html#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Making Sure Whether the Data Has Been Structured:</span></span>
+<span id="cb3-15"><a href="app-cleaning.html#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(data)</span>
+<span id="cb3-16"><a href="app-cleaning.html#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="app-cleaning.html#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="co"># &quot;From&quot; Escaping Issue in Target Archives</span></span>
+<span id="cb3-18"><a href="app-cleaning.html#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="do">## The following mbox files have non-escaped &quot;From &quot; issue that means a new line starting with the word &quot;From &quot; in the mail body is mistakenly treated by a Python mbox parser as a breaking point between each message &quot;From&quot; line.</span></span>
+<span id="cb3-19"><a href="app-cleaning.html#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="do">## To resolve this issue, I have to replace &quot;From &quot; with &quot;&gt;From &quot; for every occurrence found in mail body to escape.</span></span>
+<span id="cb3-20"><a href="app-cleaning.html#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="app-cleaning.html#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="do">### Five files have this issue in NFB-CS archive:</span></span>
+<span id="cb3-22"><a href="app-cleaning.html#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2013-April.mbox</span></span>
+<span id="cb3-23"><a href="app-cleaning.html#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2013-November.mbox</span></span>
+<span id="cb3-24"><a href="app-cleaning.html#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2016-July.mbox</span></span>
+<span id="cb3-25"><a href="app-cleaning.html#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2017-February.mbox</span></span>
+<span id="cb3-26"><a href="app-cleaning.html#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2017-May.mbox</span></span>
+<span id="cb3-27"><a href="app-cleaning.html#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-28"><a href="app-cleaning.html#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="do">### No file has escaping issue in both Science and Arts archives.</span></span>
+<span id="cb3-29"><a href="app-cleaning.html#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-30"><a href="app-cleaning.html#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="do">### Eight files have the escaping issue in BlindMath archive:</span></span>
+<span id="cb3-31"><a href="app-cleaning.html#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2012-May.mbox</span></span>
+<span id="cb3-32"><a href="app-cleaning.html#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2013-November.mbox</span></span>
+<span id="cb3-33"><a href="app-cleaning.html#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2014-August.mbox</span></span>
+<span id="cb3-34"><a href="app-cleaning.html#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2015-January.mbox</span></span>
+<span id="cb3-35"><a href="app-cleaning.html#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2016-March.mbox</span></span>
+<span id="cb3-36"><a href="app-cleaning.html#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2017-February.mbox</span></span>
+<span id="cb3-37"><a href="app-cleaning.html#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2018-May.mbox</span></span>
+<span id="cb3-38"><a href="app-cleaning.html#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="do">#### * 2019-March.mbox</span></span></code></pre></div>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="appE.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="app-table.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["dissertation.epub", "dissertation.docx"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

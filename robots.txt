@@ -1,5 +1,6 @@
 user-agent: *
 disallow: /R/
+disallow: /dissertation/
 disallow: /proposal/
 disallow: /appendix/
 disallow: /researchtalk/
