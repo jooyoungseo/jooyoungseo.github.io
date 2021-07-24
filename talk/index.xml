@@ -5,7 +5,7 @@
     <link>/talk/</link>
       <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© JooYoung Seo 2021</copyright><lastBuildDate>Thu, 21 Jan 2021 00:00:00 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© JooYoung Seo 2021</copyright><lastBuildDate>Fri, 04 Jun 2021 00:00:00 -0500</lastBuildDate>
     <image>
       <url>/img/JooYoungFacebookProfile.JPG</url>
       <title>Recent &amp; Upcoming Talks</title>
@@ -13,9 +13,27 @@
     </image>
     
     <item>
+      <title>Nature, Webcast: How to Learn to Code</title>
+      <link>/talk/nature2021/</link>
+      <pubDate>Fri, 04 Jun 2021 00:00:00 -0500</pubDate>
+      <guid>/talk/nature2021/</guid>
+      <description>&lt;p&gt;I was invited as a speaker for &amp;ldquo;How to Learn to Code&amp;rdquo; at &lt;em&gt;the Nature, Webcast&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2021 National Coding Symposium</title>
+      <link>/talk/nationalcodingsymposium2021/</link>
+      <pubDate>Tue, 11 May 2021 00:00:00 -0500</pubDate>
+      <guid>/talk/nationalcodingsymposium2021/</guid>
+      <description>&lt;p&gt;I was invited as a moderator for the panel discussion on &amp;ldquo;How Do University Programs Support Accessible Coding?&amp;rdquo; at &lt;em&gt;the 2021 National Coding Symposium&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Accessible Data Science Beyond Visual Models: Non-Visual Interactions with R and RStudio Packages</title>
       <link>/talk/rstudioglobal2021/</link>
-      <pubDate>Thu, 21 Jan 2021 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 -0600</pubDate>
       <guid>/talk/rstudioglobal2021/</guid>
       <description>&lt;p&gt;This talk has been virtually presented at RStudio::global(2021).&lt;/p&gt;
 </description>
@@ -24,7 +42,7 @@
     <item>
       <title>The Rapidly Changing World of Accessible Online Learning</title>
       <link>/talk/aect2017/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0600</pubDate>
       <guid>/talk/aect2017/</guid>
       <description>&lt;p&gt;This panel discussion has been presented in 2017 AECT in Florida.&lt;/p&gt;
 </description>
